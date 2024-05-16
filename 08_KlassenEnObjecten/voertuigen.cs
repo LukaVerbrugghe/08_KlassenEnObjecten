@@ -7,10 +7,12 @@ using System.Threading.Tasks;
 
 namespace _08_KlassenEnObjecten {
     internal class Voertuig {
+        //de eigenschappen van de objecten uit de klasse
         private int _aantalWielen;
         private bool _motor;
         private string _merk, _kleur;
 
+        //de standaardwaarden voor de eigenschappen van de klasse
         public Voertuig() {
             _kleur = "onbekend";
             _merk = "onbekend";
@@ -18,6 +20,7 @@ namespace _08_KlassenEnObjecten {
             _aantalWielen = 4;
         }
 
+        //voor alle eigenschappen zeggen hoe deze moet worden aangepast en opgeropoepen
         public int aantalWielen {
             get { 
                 return _aantalWielen;
@@ -54,6 +57,7 @@ namespace _08_KlassenEnObjecten {
             }
         }
 
+        //functie uit de klasse
         public virtual string Details() {
             if(_merk != "onbekend") {
                 return "Uw voertuig van het merk " + merk + " heeft als kleur " + kleur + " en " + aantalWielen.ToString() + " wielen.";
@@ -64,6 +68,7 @@ namespace _08_KlassenEnObjecten {
             }
         }
 
+        //nieuwe eigenschappen aanvaarden
         public Voertuig(string merk, string kleur, int wielen) {
             _kleur = kleur;
             _merk = merk;

@@ -11,6 +11,9 @@ using Microsoft.VisualBasic;
 
 namespace _08_KlassenEnObjecten {
     public partial class Form1 : Form {
+
+
+        //nieuw object maken van klasse auto met de eigenschappen als parameters
         Voertuig auto3 = new Voertuig(merk: "Volkswagen", kleur: "knalrood", wielen: 4);
         
 
@@ -20,7 +23,9 @@ namespace _08_KlassenEnObjecten {
         }
 
         private void btnAuto1_Click(object sender, EventArgs e) {
+            //object resetten
             Voertuig auto1 = new Voertuig();
+            //object eigenschappen toewijzen
             if (txtKleur.Text.Trim() != "")
             {
                 auto1.merk = txtMerk.Text;
@@ -33,7 +38,7 @@ namespace _08_KlassenEnObjecten {
             {
                 auto1.aantalWielen = Convert.ToInt32(txtWielen.Text);
             }
-
+            //functie uit klasse auto oproepen
             lblAuto1.Text = auto1.Details();
         }
 
