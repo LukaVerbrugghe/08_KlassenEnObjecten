@@ -63,5 +63,27 @@ namespace _08_KlassenEnObjecten {
         private void btnAuto3_Click(object sender, EventArgs e) {
             lblAuto3.Text = auto3.Details();
         }
+
+        private void btnFiets_Click(object sender, EventArgs e)
+        {
+            Fiets fiets = new Fiets();
+
+            if (txtKleur.Text.Trim() != "")
+            {
+                fiets.kleur = txtKleur.Text;
+            }
+            if (txtMerk.Text.Trim() != "")
+            {
+                fiets.merk = txtMerk.Text;
+            }
+            if (txtWielen.Text.Trim() != "")
+            {
+                fiets.aantalWielen = Convert.ToInt16(txtWielen.Text);
+            }
+
+            fiets.fietsplakaat = chbFietsplakaat.Checked;
+
+            lblFiets.Text =  fiets.ShowText();
+        }
     }
 }

@@ -35,6 +35,9 @@
             this.lblAuto1 = new System.Windows.Forms.Label();
             this.lblAuto2 = new System.Windows.Forms.Label();
             this.lblAuto3 = new System.Windows.Forms.Label();
+            this.btnFiets = new System.Windows.Forms.Button();
+            this.chbFietsplakaat = new System.Windows.Forms.CheckBox();
+            this.lblFiets = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtMerk
@@ -118,7 +121,7 @@
             // lblAuto1
             // 
             this.lblAuto1.AutoSize = true;
-            this.lblAuto1.Location = new System.Drawing.Point(179, 253);
+            this.lblAuto1.Location = new System.Drawing.Point(179, 196);
             this.lblAuto1.Name = "lblAuto1";
             this.lblAuto1.Size = new System.Drawing.Size(10, 13);
             this.lblAuto1.TabIndex = 3;
@@ -127,7 +130,7 @@
             // lblAuto2
             // 
             this.lblAuto2.AutoSize = true;
-            this.lblAuto2.Location = new System.Drawing.Point(179, 289);
+            this.lblAuto2.Location = new System.Drawing.Point(179, 232);
             this.lblAuto2.Name = "lblAuto2";
             this.lblAuto2.Size = new System.Drawing.Size(10, 13);
             this.lblAuto2.TabIndex = 3;
@@ -136,22 +139,54 @@
             // lblAuto3
             // 
             this.lblAuto3.AutoSize = true;
-            this.lblAuto3.Location = new System.Drawing.Point(179, 315);
+            this.lblAuto3.Location = new System.Drawing.Point(179, 258);
             this.lblAuto3.Name = "lblAuto3";
             this.lblAuto3.Size = new System.Drawing.Size(10, 13);
             this.lblAuto3.TabIndex = 3;
             this.lblAuto3.Text = ".";
+            // 
+            // btnFiets
+            // 
+            this.btnFiets.Location = new System.Drawing.Point(325, 305);
+            this.btnFiets.Name = "btnFiets";
+            this.btnFiets.Size = new System.Drawing.Size(75, 23);
+            this.btnFiets.TabIndex = 2;
+            this.btnFiets.Text = "Fiets";
+            this.btnFiets.UseVisualStyleBackColor = true;
+            this.btnFiets.Click += new System.EventHandler(this.btnFiets_Click);
+            // 
+            // chbFietsplakaat
+            // 
+            this.chbFietsplakaat.AutoSize = true;
+            this.chbFietsplakaat.Location = new System.Drawing.Point(92, 305);
+            this.chbFietsplakaat.Name = "chbFietsplakaat";
+            this.chbFietsplakaat.Size = new System.Drawing.Size(83, 17);
+            this.chbFietsplakaat.TabIndex = 4;
+            this.chbFietsplakaat.Text = "Fietsplakaat";
+            this.chbFietsplakaat.UseVisualStyleBackColor = true;
+            // 
+            // lblFiets
+            // 
+            this.lblFiets.AutoSize = true;
+            this.lblFiets.Location = new System.Drawing.Point(89, 350);
+            this.lblFiets.Name = "lblFiets";
+            this.lblFiets.Size = new System.Drawing.Size(10, 13);
+            this.lblFiets.TabIndex = 3;
+            this.lblFiets.Text = ".";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.chbFietsplakaat);
+            this.Controls.Add(this.lblFiets);
             this.Controls.Add(this.lblAuto3);
             this.Controls.Add(this.lblAuto2);
             this.Controls.Add(this.lblAuto1);
             this.Controls.Add(this.btnAuto3);
             this.Controls.Add(this.btnAuto2);
+            this.Controls.Add(this.btnFiets);
             this.Controls.Add(this.btnAuto1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -180,6 +215,9 @@
         private System.Windows.Forms.Label lblAuto1;
         private System.Windows.Forms.Label lblAuto2;
         private System.Windows.Forms.Label lblAuto3;
+        private System.Windows.Forms.Button btnFiets;
+        private System.Windows.Forms.CheckBox chbFietsplakaat;
+        private System.Windows.Forms.Label lblFiets;
     }
 }
 
