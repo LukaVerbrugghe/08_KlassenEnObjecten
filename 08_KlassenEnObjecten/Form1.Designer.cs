@@ -32,7 +32,9 @@
             this.btnAuto1 = new System.Windows.Forms.Button();
             this.btnAuto2 = new System.Windows.Forms.Button();
             this.btnAuto3 = new System.Windows.Forms.Button();
-            this.lblAutos = new System.Windows.Forms.Label();
+            this.lblAuto1 = new System.Windows.Forms.Label();
+            this.lblAuto2 = new System.Windows.Forms.Label();
+            this.lblAuto3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtMerk
@@ -91,6 +93,7 @@
             this.btnAuto1.TabIndex = 2;
             this.btnAuto1.Text = "Auto 1";
             this.btnAuto1.UseVisualStyleBackColor = true;
+            this.btnAuto1.Click += new System.EventHandler(this.btnAuto1_Click);
             // 
             // btnAuto2
             // 
@@ -100,6 +103,7 @@
             this.btnAuto2.TabIndex = 2;
             this.btnAuto2.Text = "Auto 2";
             this.btnAuto2.UseVisualStyleBackColor = true;
+            this.btnAuto2.Click += new System.EventHandler(this.btnAuto2_Click);
             // 
             // btnAuto3
             // 
@@ -109,22 +113,43 @@
             this.btnAuto3.TabIndex = 2;
             this.btnAuto3.Text = "Auto3";
             this.btnAuto3.UseVisualStyleBackColor = true;
+            this.btnAuto3.Click += new System.EventHandler(this.btnAuto3_Click);
             // 
-            // lblAutos
+            // lblAuto1
             // 
-            this.lblAutos.AutoSize = true;
-            this.lblAutos.Location = new System.Drawing.Point(179, 253);
-            this.lblAutos.Name = "lblAutos";
-            this.lblAutos.Size = new System.Drawing.Size(10, 13);
-            this.lblAutos.TabIndex = 3;
-            this.lblAutos.Text = ".";
+            this.lblAuto1.AutoSize = true;
+            this.lblAuto1.Location = new System.Drawing.Point(179, 253);
+            this.lblAuto1.Name = "lblAuto1";
+            this.lblAuto1.Size = new System.Drawing.Size(10, 13);
+            this.lblAuto1.TabIndex = 3;
+            this.lblAuto1.Text = ".";
+            // 
+            // lblAuto2
+            // 
+            this.lblAuto2.AutoSize = true;
+            this.lblAuto2.Location = new System.Drawing.Point(179, 289);
+            this.lblAuto2.Name = "lblAuto2";
+            this.lblAuto2.Size = new System.Drawing.Size(10, 13);
+            this.lblAuto2.TabIndex = 3;
+            this.lblAuto2.Text = ".";
+            // 
+            // lblAuto3
+            // 
+            this.lblAuto3.AutoSize = true;
+            this.lblAuto3.Location = new System.Drawing.Point(179, 315);
+            this.lblAuto3.Name = "lblAuto3";
+            this.lblAuto3.Size = new System.Drawing.Size(10, 13);
+            this.lblAuto3.TabIndex = 3;
+            this.lblAuto3.Text = ".";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.lblAutos);
+            this.Controls.Add(this.lblAuto3);
+            this.Controls.Add(this.lblAuto2);
+            this.Controls.Add(this.lblAuto1);
             this.Controls.Add(this.btnAuto3);
             this.Controls.Add(this.btnAuto2);
             this.Controls.Add(this.btnAuto1);
@@ -152,7 +177,9 @@
         private System.Windows.Forms.Button btnAuto1;
         private System.Windows.Forms.Button btnAuto2;
         private System.Windows.Forms.Button btnAuto3;
-        private System.Windows.Forms.Label lblAutos;
+        private System.Windows.Forms.Label lblAuto1;
+        private System.Windows.Forms.Label lblAuto2;
+        private System.Windows.Forms.Label lblAuto3;
     }
 }
 
