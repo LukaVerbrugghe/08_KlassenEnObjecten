@@ -61,6 +61,8 @@
     <Compile Include="Oefening 2\frmOef2.Designer.cs">
       <DependentUpon>frmOef2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Oefening 2\Leerlingen.cs" />
+    <Compile Include="Oefening 2\Persoonsgegevens.cs" />
     <Compile Include="voertuigen.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>

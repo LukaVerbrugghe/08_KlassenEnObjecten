@@ -104,6 +104,7 @@
             // 
             // cmbKlas
             // 
+            this.cmbKlas.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbKlas.FormattingEnabled = true;
             this.cmbKlas.Items.AddRange(new object[] {
             "Kies een klas",
@@ -123,6 +124,7 @@
             this.btnBevestig.TabIndex = 5;
             this.btnBevestig.Text = "Bevestig invoer";
             this.btnBevestig.UseVisualStyleBackColor = true;
+            this.btnBevestig.Click += new System.EventHandler(this.btnBevestig_Click);
             // 
             // label5
             // 
