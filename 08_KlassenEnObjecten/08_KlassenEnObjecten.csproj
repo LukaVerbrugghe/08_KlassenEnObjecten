@@ -63,6 +63,16 @@
     </Compile>
     <Compile Include="Oefening 2\Leerlingen.cs" />
     <Compile Include="Oefening 2\Persoonsgegevens.cs" />
+    <Compile Include="Oefening 3\Dieren.cs" />
+    <Compile Include="Oefening 3\frmOef3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Oefening 3\frmOef3.Designer.cs">
+      <DependentUpon>frmOef3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Oefening 3\Koe.cs" />
+    <Compile Include="Oefening 3\Slang.cs" />
+    <Compile Include="Oefening 3\Varken.cs" />
     <Compile Include="voertuigen.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -80,6 +90,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Oefening 2\frmOef2.resx">
       <DependentUpon>frmOef2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Oefening 3\frmOef3.resx">
+      <DependentUpon>frmOef3.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

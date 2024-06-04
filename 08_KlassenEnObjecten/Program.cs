@@ -14,7 +14,7 @@ namespace _08_KlassenEnObjecten {
         static void Main() {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Oefening_2.frmOef2());
+            Application.Run(new Oefening_3.frmOef3());
         }
     }
 }
